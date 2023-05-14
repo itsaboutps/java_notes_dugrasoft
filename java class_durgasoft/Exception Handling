@@ -798,6 +798,9 @@ output : Hello			output : Hello			CE : exception java.io.IOException		CE : excep
 								     is never thrown in body of			     ptedException is never
 								     corresponding try statement		     thrown in body of corres-
 														     ponding try statement.
+														     
+Since IOException is not thrown in the try block, the Java compiler can detect that the catch block will never be executed, 
+and it generates a compile-time error to let you know that catching an IOException in this context is unnecessary.														     
 class Test{								 			
 	public static void main(String[] args){							
 		try{													

@@ -396,6 +396,12 @@ __________________
 Adapter classes
 __________________
 
+******************************
+In Java, interfaces define a contract that classes can implement. When a class implements an interface, it must provide an implementation for all the methods declared in that interface. This means that if an interface has a large number of methods, a class implementing that interface would need to provide implementations for each and every method.
+
+However, there is an alternative approach using an adapter class. An adapter class is an abstract class that provides default implementations for all the methods of an interface. By extending the adapter class, a class can choose to provide implementations only for the methods it requires, rather than implementing all the methods of the interface directly. This approach is often referred to as the Adapter pattern or the default interface methods feature in Java.
+*******************************
+
 Adapter class : Adapter class is a simple java class that implements an interface with only empty implementation.
 
 
